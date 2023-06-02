@@ -1,0 +1,35 @@
+@use '../theme/vars.scss' as *;
+
+$grid-prefix-cls: #{$cls-prefix}grid;
+
+.#{$grid-prefix-cls}__data-rate {
+    .#{$grid-prefix-cls}__rate-chart {
+      opacity: 0.6;
+      background-color: var(--el-color-success);
+      height: 30px;
+      line-height: 30px;
+
+      &.#{$grid-prefix-cls}__chart-completed {
+        background-color: var(--el-color-success);
+      }
+
+      &.#{$grid-prefix-cls}__chart-danger {
+        background-color: var(--el-color-warning);
+      }
+
+      &.#{$grid-prefix-cls}__chart-warning {
+        background-color: var(--el-color-warning);
+      }
+
+      &.#{$grid-prefix-cls}__chart-normal {
+        background-color: var(--el-color-primary);
+      }
+    }
+
+    .#{$grid-prefix-cls}__rate-text {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
