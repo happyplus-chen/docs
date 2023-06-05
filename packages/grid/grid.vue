@@ -1,5 +1,11 @@
 <template>
-  <vxe-grid ref="tableRef" v-bind="$attrs" :pager-config="pagerConfig" :proxy-config="proxyConfig">
+  <vxe-grid
+    ref="tableRef"
+    :class="$CLS_PREFIX + '-grid'"
+    v-bind="$attrs"
+    :pager-config="pagerConfig"
+    :proxy-config="proxyConfig"
+  >
     <template #pager="{ $grid }">
       <div class="grid-pager">
         <el-pagination
@@ -27,6 +33,7 @@ export default { name: $PREFIX + 'Grid', inheritAttrs: false }
 </script>
 
 <script setup lang="ts">
+import { $CLS_PREFIX } from '../utils/use-global-const'
 import { ElPagination } from 'element-plus'
 import { ref, onMounted, useAttrs, computed, unref } from 'vue'
 import { gridComponentMethodKeys } from './methods'

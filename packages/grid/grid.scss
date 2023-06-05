@@ -2,6 +2,14 @@
 
 $grid-prefix-cls: #{$cls-prefix}grid;
 
+.#{$grid-prefix-cls} {
+  & &__cell {
+    width: 100%;
+  }
+  .el-date-editor.el-input {
+    width: 100%;
+  }
+}
 .#{$grid-prefix-cls}__data-rate {
     .#{$grid-prefix-cls}__rate-chart {
       opacity: 0.6;

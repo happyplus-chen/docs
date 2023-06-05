@@ -36,40 +36,22 @@ const gridOptions = reactive({
     },
     {
       field: 'vbeln',
-      title: '送货单号',
-      editRender: { name: 'JInput' }
+      title: '送货单号'
     },
 
     {
       field: 'ebeln',
-      title: '采购单号',
-      editRender: { name: 'JInput' }
+      title: '采购单号'
     },
     {
       field: 'matnr',
-      title: '物料号',
-      editRender: { name: 'JInput' }
+      title: '物料号'
     },
     {
       field: 'txz01',
-      title: '物料描述',
-      editRender: { name: 'JInput' }
+      title: '物料描述'
     }
-  ],
-
-  editRules: {
-    name: [
-      { required: true, message: '名称必填' },
-      { min: 3, max: 50, message: '名称长度在 3 到 50 个字符' }
-    ],
-    email: [{ required: true, message: '邮件必须填写' }],
-    role: [{ required: true, message: '角色必须填写' }]
-  },
-  editConfig: {
-    trigger: 'click',
-    mode: 'row',
-    showStatus: true
-  }
+  ]
 })
 
 onMounted(() => {})

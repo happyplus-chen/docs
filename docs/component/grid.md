@@ -30,6 +30,10 @@ grid/proxy
 
 ## 编辑器
 
+::: demo
+grid/edit
+:::
+
 
 ## 渲染器
 

@@ -1,73 +1,60 @@
 import { VXETable } from 'vxe-table'
 import {
-  renderRate,
-  renderEdit,
-  renderCell,
-  renderSelect,
-  renderEnum,
-  renderNumberRange,
-  renderNumberRangeCell,
-  renderNumber,
-  // renderButton,
-  renderDatePicker,
-  renderSwitch,
-  // renderSelectPop
-  renderJsInputEdit
+  inputEditor,
+  inputNumberEditor,
+  selectEditor,
+  popSelectEditor,
+  timePickerEditor,
+  timeSelectEditor,
+  DatePickerEditor,
+  autocompleteEditor,
+  switchEditor,
+  enumRenderer
 } from './render'
 
-VXETable.renderer.add('JInput', {
+VXETable.renderer.add('Input', {
   // 激活时自动聚焦
   autofocus: '.el-input__inner',
   // 可编辑激活模板
-  renderEdit: renderEdit,
-  // 可编辑显示模板
-  renderCell: renderCell
+  renderEdit: inputEditor
 })
 
-VXETable.renderer.add('JRate', {
+VXETable.renderer.add('InputNumber', {
   autofocus: '.el-input__inner',
-  renderEdit: renderEdit,
-  renderCell: renderRate,
-  renderDefault: renderRate
+  renderEdit: inputNumberEditor
+})
+VXETable.renderer.add('Select', {
+  autofocus: '.el-input__inner',
+  renderEdit: selectEditor,
+  renderCell: enumRenderer
 })
 
-VXETable.renderer.add('JSelect', {
+VXETable.renderer.add('PopSelect', {
   autofocus: '.el-input__inner',
-  renderEdit: renderSelect,
-  renderDefault: renderEnum,
-  renderCell: renderEnum
+  renderEdit: popSelectEditor
 })
 
-VXETable.renderer.add('JNumberRange', {
+VXETable.renderer.add('TimePicker', {
   autofocus: '.el-input__inner',
-  renderEdit: renderNumberRange,
-  renderCell: renderNumberRangeCell
+  renderEdit: timePickerEditor
 })
 
-VXETable.renderer.add('Jnumber', {
+VXETable.renderer.add('TimeSelect', {
   autofocus: '.el-input__inner',
-  renderEdit: renderNumber,
-  renderCell: renderCell
+  renderEdit: timeSelectEditor
 })
 
-VXETable.renderer.add('JDatePicker', {
+VXETable.renderer.add('DatePicker', {
   autofocus: '.el-input__inner',
-  renderEdit: renderDatePicker
-  // renderCell: renderDateCell // todo:使用普通span渲染不出来的问题
-})
-VXETable.renderer.add('JSwitch', {
-  autofocus: '.el-input__inner',
-  renderEdit: renderSwitch,
-  renderCell: renderSwitch
+  renderEdit: DatePickerEditor
 })
 
-// VXETable.renderer.add('JselectPop', {
-//   autofocus: '.el-input__inner',
-//   renderEdit: renderSelectPop,
-//   renderCell: renderCell
-// })
-
-VXETable.renderer.add('JSInput', {
+VXETable.renderer.add('AutoComplete', {
   autofocus: '.el-input__inner',
-  renderEdit: renderJsInputEdit
+  renderEdit: autocompleteEditor
+})
+
+VXETable.renderer.add('Switch', {
+  autofocus: '.el-input__inner',
+  renderEdit: switchEditor
 })

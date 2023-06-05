@@ -121,7 +121,7 @@ const DATALIST = [
     ebelp: '00020',
     matnr: '10060353',
     txz01: '气袋布_420D_46×46涂层克重25幅宽1.7M',
-    status: 'null',
+    status: '1',
     dtatus: '1',
     deleted: 'Y',
     lifnr: '101039',
@@ -142,7 +142,7 @@ const DATALIST = [
     createDate: 1672126096000,
     createTime: '15:28:16',
     modifyDate: 1678522564000,
-    modifyTime: '16:16:04',
+    modifyTime: '16:16',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -153,7 +153,7 @@ const DATALIST = [
     matnr: '10691864-00',
     txz01: 'BYDQ195081317-2F71P1.25_球销型安装螺栓',
     materialGroupMeaning: '汽车紧固件',
-    status: '2',
+    status: '1',
     packageStatusStr: '完成',
     dtatus: '8',
     deleted: 'N',
@@ -178,7 +178,7 @@ const DATALIST = [
     createDate: 1684567398000,
     createTime: '15:23:18',
     modifyDate: 1685256754000,
-    modifyTime: '14:52:34',
+    modifyTime: '14:52',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -215,7 +215,7 @@ const DATALIST = [
     createDate: 1684567398000,
     createTime: '15:23:18',
     modifyDate: 1685256125000,
-    modifyTime: '14:42:05',
+    modifyTime: '14:42',
     modifyUser: 138388,
     modifyUserName: '周浩'
   },
@@ -228,7 +228,7 @@ const DATALIST = [
     matnr: '10029353-00',
     txz01: 'IB5-1001400_动力总成后悬置安装支架_M0000',
     materialGroupMeaning: '悬置总成及其零部件',
-    status: '2',
+    status: '1',
     packageStatusStr: '完成',
     dtatus: '5',
     deleted: 'N',
@@ -253,7 +253,7 @@ const DATALIST = [
     createDate: 1684909894000,
     createTime: '14:31:34',
     modifyDate: 1684909894000,
-    modifyTime: '14:31:34',
+    modifyTime: '14:31',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -267,7 +267,7 @@ const DATALIST = [
     matnr: '10033692-00',
     txz01: 'IB5-1001300_动力总成后悬置支座总成_M0000',
     materialGroupMeaning: '悬置总成及其零部件',
-    status: '2',
+    status: '3',
     packageStatusStr: '完成',
     dtatus: '5',
     deleted: 'N',
@@ -292,7 +292,7 @@ const DATALIST = [
     createDate: 1684909901000,
     createTime: '14:31:41',
     modifyDate: 1684909901000,
-    modifyTime: '14:31:41',
+    modifyTime: '14:31',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -331,7 +331,7 @@ const DATALIST = [
     createDate: 1684909908000,
     createTime: '14:31:48',
     modifyDate: 1684909908000,
-    modifyTime: '14:31:48',
+    modifyTime: '14:31',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -345,7 +345,7 @@ const DATALIST = [
     matnr: '12491750-00',
     txz01: 'SA2H-2001100_后驱电机总成前悬置支座总成_M00000',
     materialGroupMeaning: '悬置总成及其零部件',
-    status: '2',
+    status: '3',
     packageStatusStr: '完成',
     dtatus: '5',
     deleted: 'N',
@@ -370,7 +370,7 @@ const DATALIST = [
     createDate: 1684909908000,
     createTime: '14:31:48',
     modifyDate: 1684909908000,
-    modifyTime: '14:31:48',
+    modifyTime: '14:31',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -409,7 +409,7 @@ const DATALIST = [
     createDate: 1684818877000,
     createTime: '13:14:37',
     modifyDate: 1684818877000,
-    modifyTime: '13:14:37',
+    modifyTime: '13:14',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -448,7 +448,7 @@ const DATALIST = [
     createDate: 1684741969000,
     createTime: '15:52:49',
     modifyDate: 1684741969000,
-    modifyTime: '15:52:49',
+    modifyTime: '15:52',
     packageLevel: 1,
     modifyUser: 140695,
     modifyUserName: '王明'
@@ -487,7 +487,7 @@ const DATALIST = [
     createDate: 1683858778000,
     createTime: '10:32:58',
     modifyDate: 1683858778000,
-    modifyTime: '10:32:58',
+    modifyTime: '10:32',
     packageLevel: 1,
     modifyUser: 140695,
     modifyUserName: '王明'
@@ -526,7 +526,7 @@ const DATALIST = [
     createDate: 1683858357000,
     createTime: '10:25:57',
     modifyDate: 1684659971000,
-    modifyTime: '17:06:11',
+    modifyTime: '17:06',
     packageLevel: 1,
     modifyUser: 138388,
     modifyUserName: '周浩'
@@ -565,7 +565,7 @@ const DATALIST = [
     createDate: 1683791069000,
     createTime: '15:44:29',
     modifyDate: 1683791069000,
-    modifyTime: '15:44:29',
+    modifyTime: '15:44',
     packageLevel: 1,
     modifyUser: 140695,
     modifyUserName: '王明'
@@ -604,7 +604,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684747671000,
-    modifyTime: '17:27:51',
+    modifyTime: '17:27',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -642,7 +642,7 @@ const DATALIST = [
     createDate: 1683704721000,
     createTime: '15:45:21',
     modifyDate: 1683704721000,
-    modifyTime: '15:45:21',
+    modifyTime: '15:45',
     packageLevel: 1,
     modifyUser: 10020033,
     modifyUserName: '黄立瀚'
@@ -681,7 +681,7 @@ const DATALIST = [
     createDate: 1683704721000,
     createTime: '15:45:21',
     modifyDate: 1683704721000,
-    modifyTime: '15:45:21',
+    modifyTime: '15:45',
     packageLevel: 1,
     modifyUser: 10020033,
     modifyUserName: '黄立瀚'
@@ -720,7 +720,7 @@ const DATALIST = [
     createDate: 1683623884000,
     createTime: '17:18:04',
     modifyDate: 1683623884000,
-    modifyTime: '17:18:04',
+    modifyTime: '17:18',
     packageLevel: 1,
     modifyUser: 10020033,
     modifyUserName: '黄立瀚'
@@ -759,7 +759,7 @@ const DATALIST = [
     createDate: 1683613436000,
     createTime: '14:23:56',
     modifyDate: 1683613436000,
-    modifyTime: '14:23:56',
+    modifyTime: '14:23',
     packageLevel: 1,
     modifyUser: 10018790,
     modifyUserName: '谢永强'
@@ -798,7 +798,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -836,7 +836,7 @@ const DATALIST = [
     createDate: 1682410654000,
     createTime: '16:17:34',
     modifyDate: 1682410654000,
-    modifyTime: '16:17:34',
+    modifyTime: '16:17',
     packageLevel: 1,
     modifyUser: 1376736669335553,
     modifyUserName: '王明'
@@ -875,7 +875,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -913,7 +913,7 @@ const DATALIST = [
     createDate: 1682401935000,
     createTime: '13:52:15',
     modifyDate: 1682401935000,
-    modifyTime: '13:52:15',
+    modifyTime: '13:52',
     packageLevel: 1,
     modifyUser: 1376736669335553,
     modifyUserName: '王明'
@@ -952,7 +952,7 @@ const DATALIST = [
     createDate: 1682401935000,
     createTime: '13:52:15',
     modifyDate: 1682401935000,
-    modifyTime: '13:52:15',
+    modifyTime: '13:52',
     packageLevel: 1,
     modifyUser: 1376736669335553,
     modifyUserName: '王明'
@@ -991,7 +991,7 @@ const DATALIST = [
     createDate: 1682390433000,
     createTime: '10:40:33',
     modifyDate: 1682390433000,
-    modifyTime: '10:40:33',
+    modifyTime: '10:40',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1030,7 +1030,7 @@ const DATALIST = [
     createDate: 1682390433000,
     createTime: '10:40:33',
     modifyDate: 1682390433000,
-    modifyTime: '10:40:33',
+    modifyTime: '10:40',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1069,7 +1069,7 @@ const DATALIST = [
     createDate: 1682389024000,
     createTime: '10:17:04',
     modifyDate: 1682389024000,
-    modifyTime: '10:17:04',
+    modifyTime: '10:17',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1108,7 +1108,7 @@ const DATALIST = [
     createDate: 1682389024000,
     createTime: '10:17:04',
     modifyDate: 1682389024000,
-    modifyTime: '10:17:04',
+    modifyTime: '10:17',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1147,7 +1147,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -1185,7 +1185,7 @@ const DATALIST = [
     createDate: 1682332684000,
     createTime: '18:38:04',
     modifyDate: 1682332684000,
-    modifyTime: '18:38:04',
+    modifyTime: '18:38',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1224,7 +1224,7 @@ const DATALIST = [
     createDate: 1682325944000,
     createTime: '16:45:44',
     modifyDate: 1682325944000,
-    modifyTime: '16:45:44',
+    modifyTime: '16:45',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1263,7 +1263,7 @@ const DATALIST = [
     createDate: 1682326106000,
     createTime: '16:48:26',
     modifyDate: 1682326106000,
-    modifyTime: '16:48:26',
+    modifyTime: '16:48',
     packageLevel: 1,
     modifyUser: 133823,
     modifyUserName: '王雪雯'
@@ -1302,7 +1302,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -1340,7 +1340,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     modifyUser: 134847,
     modifyUserName: '林圣桢'
   },
@@ -1378,7 +1378,7 @@ const DATALIST = [
     createDate: 1684719448000,
     createTime: '09:37:28',
     modifyDate: 1684719448000,
-    modifyTime: '09:37:28',
+    modifyTime: '09:37',
     packageLevel: 1,
     modifyUser: 134847,
     modifyUserName: '林圣桢'
@@ -1420,7 +1420,7 @@ const DATALIST = [
     createDate: 1682230495000,
     createTime: '14:14:55',
     modifyDate: 1682230495000,
-    modifyTime: '14:14:55',
+    modifyTime: '14:14',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1462,7 +1462,7 @@ const DATALIST = [
     createDate: 1682213449000,
     createTime: '09:30:49',
     modifyDate: 1682213449000,
-    modifyTime: '09:30:49',
+    modifyTime: '09:30',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1501,7 +1501,7 @@ const DATALIST = [
     createDate: 1682213434000,
     createTime: '09:30:34',
     modifyDate: 1682213434000,
-    modifyTime: '09:30:34',
+    modifyTime: '09:30',
     packageLevel: 1,
     modifyUser: 1373754846052352,
     modifyUserName: '周浩'
@@ -1540,7 +1540,7 @@ const DATALIST = [
     createDate: 1681969999000,
     createTime: '13:53:19',
     modifyDate: 1681969999000,
-    modifyTime: '13:53:19',
+    modifyTime: '13:53',
     packageLevel: 3,
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
@@ -1579,7 +1579,7 @@ const DATALIST = [
     createDate: 1681963090000,
     createTime: '11:58:10',
     modifyDate: 1681963090000,
-    modifyTime: '11:58:10',
+    modifyTime: '11:58',
     packageLevel: 3,
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
@@ -1618,7 +1618,7 @@ const DATALIST = [
     createDate: 1681881693000,
     createTime: '13:21:33',
     modifyDate: 1681881693000,
-    modifyTime: '13:21:33',
+    modifyTime: '13:21',
     packageLevel: 3,
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
@@ -1657,7 +1657,7 @@ const DATALIST = [
     createDate: 1681881693000,
     createTime: '13:21:33',
     modifyDate: 1681881693000,
-    modifyTime: '13:21:33',
+    modifyTime: '13:21',
     packageLevel: 3,
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
@@ -1696,7 +1696,7 @@ const DATALIST = [
     createDate: 1681881693000,
     createTime: '13:21:33',
     modifyDate: 1681881693000,
-    modifyTime: '13:21:33',
+    modifyTime: '13:21',
     packageLevel: 3,
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
@@ -1735,7 +1735,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1773,7 +1773,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1811,7 +1811,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1849,7 +1849,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1887,7 +1887,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1925,7 +1925,7 @@ const DATALIST = [
     createDate: 1681807364000,
     createTime: '16:42:44',
     modifyDate: 1681807364000,
-    modifyTime: '16:42:44',
+    modifyTime: '16:42',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -1963,7 +1963,7 @@ const DATALIST = [
     createDate: 1681805860000,
     createTime: '16:17:40',
     modifyDate: 1681805860000,
-    modifyTime: '16:17:40',
+    modifyTime: '16:17',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -2001,7 +2001,7 @@ const DATALIST = [
     createDate: 1681785093000,
     createTime: '10:31:33',
     modifyDate: 1681785093000,
-    modifyTime: '10:31:33',
+    modifyTime: '10:31',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   },
@@ -2039,7 +2039,7 @@ const DATALIST = [
     createDate: 1681785083000,
     createTime: '10:31:23',
     modifyDate: 1681785083000,
-    modifyTime: '10:31:23',
+    modifyTime: '10:31',
     modifyUser: 1373541302181888,
     modifyUserName: '测试看板01'
   }

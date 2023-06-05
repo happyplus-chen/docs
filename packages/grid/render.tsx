@@ -2,6 +2,10 @@ import type { VxeGlobalRendererHandles } from 'vxe-table'
 import { isObject } from '../utils/utils'
 import XEUtils from 'xe-utils'
 import { $CLS_PREFIX } from '../utils/use-global-const'
+import PopSelect from '../pop-select'
+import Select from '../select'
+
+const CELLCLASS = $CLS_PREFIX + '-grid__cell'
 
 const width100 = { width: '100%' }
 
@@ -30,7 +34,9 @@ const getAttrs = (renderOpts: any = {}, params: any) => {
   }
 }
 
-export const renderEdit = (
+// Input
+
+export const inputEditor = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
   params: VxeGlobalRendererHandles.RenderEditParams
 ) => {
@@ -39,22 +45,89 @@ export const renderEdit = (
   return [<el-input class="jg-cell" v-model={row[column.field]} {...attrs}></el-input>]
 }
 
-export const renderNumber = (
+export const inputNumberEditor = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
   params: VxeGlobalRendererHandles.RenderEditParams
 ) => {
   const { row, column } = params
   const attrs = getAttrs(renderOpts, params)
   return [
-    <el-input-number
-      style={{ width: '100%' }}
-      v-model={row[column.field]}
-      {...attrs}
-    ></el-input-number>
+    <el-input-number class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-input-number>
   ]
 }
 
-export const renderCell = (
+export const selectEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [<Select class={CELLCLASS} v-model={row[column.field]} {...attrs}></Select>]
+}
+
+export const timePickerEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [
+    <el-time-picker class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-time-picker>
+  ]
+}
+
+export const timeSelectEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [
+    <el-time-select class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-time-select>
+  ]
+}
+
+export const DatePickerEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [
+    <el-date-picker class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-date-picker>
+  ]
+}
+
+export const autocompleteEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [
+    <el-autocomplete class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-autocomplete>
+  ]
+}
+
+export const switchEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [<el-switch class={CELLCLASS} v-model={row[column.field]} {...attrs}></el-switch>]
+}
+
+export const popSelectEditor = (
+  renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
+  params: VxeGlobalRendererHandles.RenderEditParams
+) => {
+  const { row, column } = params
+  const attrs = getAttrs(renderOpts, params)
+  return [<PopSelect class={CELLCLASS} v-model={row[column.field]} {...attrs}></PopSelect>]
+}
+
+export const cellRenderer = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
   params: VxeGlobalRendererHandles.RenderEditParams
 ) => {
@@ -106,7 +179,7 @@ export const renderRate = (
   ]
 }
 
-export const renderSelect = (
+export const SelectEditor = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
   params: VxeGlobalRendererHandles.RenderEditParams
 ) => {
@@ -140,7 +213,7 @@ export const renderNumberRangeCell = (
   ]
 }
 
-export const renderEnum = (
+export const enumRenderer = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
   params: VxeGlobalRendererHandles.RenderEditParams
 ) => {
@@ -156,32 +229,6 @@ export const renderEnum = (
     .join(',')
   return <span>{text}</span>
 }
-// 按钮废弃
-// export const renderButton = (
-//   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
-//   params: VxeGlobalRendererHandles.RenderEditParams
-// ) => {
-//   const { row, column } = params
-//   const attrs = getAttrs(renderOpts, params)
-//   const data = row[column.field] || ''
-//   return [
-//     <div>
-//       {attrs.multiple ? (
-//         attrs.config.map((item, index) => {
-//           return (
-//             <el-button style={width100} {...item}>
-//               {item.label}
-//             </el-button>
-//           )
-//         })
-//       ) : (
-//         <el-button style={width100} {...attrs}>
-//           {attrs.label}
-//         </el-button>
-//       )}
-//     </div>
-//   ]
-// }
 
 export const renderDatePicker = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
@@ -212,39 +259,6 @@ export const renderSwitch = (
 
   return [<el-switch style={width100} {...attrs} v-model={row[column.field]} />]
 }
-
-//查询对象组件
-// export const renderSelectPop = (
-//   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
-//   params: VxeGlobalRendererHandles.RenderEditParams
-// ) => {
-//   const { row, column } = params
-//   const attrs = getAttrs(renderOpts, params)
-//   const data = row[column.field] || ''
-//   const show = ref(false)
-//   return [
-//     <div>
-//       <el-input
-//         v-model={row[column.field]}
-//         placeholder="Please input"
-//         class="input-with-select"
-//         clearable
-//         v-slots={{
-//           append: () => (
-//             <el-button
-//               icon="Search"
-//               onClick={() => {
-//                 show.value = true
-//                 console.log(show.value, '查询对象弹窗')
-//               }}
-//             />
-//           )
-//         }}
-//       ></el-input>
-//       <jg-select-pop v-model={show.value} {...attrs}></jg-select-pop>
-//     </div>
-//   ]
-// }
 
 export const renderJsInputEdit = (
   renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
